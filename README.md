@@ -1,1 +1,3 @@
 # GitNotes
+
+Useful notes about git, commands, features, best practises etc...
