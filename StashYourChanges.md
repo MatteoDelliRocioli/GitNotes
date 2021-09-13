@@ -34,7 +34,7 @@ The stash number can be seen using the `git stash list` command.
 
 ### How can I see the contents of a stashed file?
 
-> git show 'stash@{0}:path-to-the-stashed-file-you-want-to-see' > 'path-to-the-file-you-want-to-save-the-contents-in'
+`git show 'stash@{0}:path-to-the-stashed-file-you-want-to-see' > 'path-to-the-file-you-want-to-save-the-contents-in'`
 
 ---
 
