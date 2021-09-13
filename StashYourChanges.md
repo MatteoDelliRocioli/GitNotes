@@ -24,7 +24,7 @@ Used as above though `git stash` only stashes files that are already in the proj
 
 ---
 
-### "Ok Matteo that's fine but what if I don't remember precisely the changes that I stashed, how can I see them" you could say.
+### "Ok mate that's fine but what if I don't remember precisely the changes that I stashed, how can I see them" you could say.
 
 My friend, turns out that there is a simple command for that as well and that is `git stash show 'stash@{<the stash number>}'` for the file names and `git stash show --all 'stash@{<the stash number>}'` to see also the changes in those files. 
 
@@ -32,4 +32,10 @@ The stash number can be seen using the `git stash list` command.
 
 ---
 
-I hope you could benefit from this brief guide, see you next time
+### How can I see the contents of a stashed file?
+
+> git show 'stash@{0}:path-to-the-stashed-file-you-want-to-see' > 'path-to-the-file-you-want-to-save-the-contents-in'
+
+---
+
+I hope you could benefit from this brief guide
