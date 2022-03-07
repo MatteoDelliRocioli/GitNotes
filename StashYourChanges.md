@@ -3,7 +3,7 @@
 Git stash is a useful command git offers us to put aside the changes we are currently making on our project.
 
 For example 
-1. you are working on a feature branch but your manager calls you because there is a major bug in production env (a bit cathastrophic I know but you get the point :smile:) so you have to change branch before finishing and committing your work
+1. you are working on a feature branch but your manager calls you because there is a major bug in production env (a bit cathastrophic I know but you get the point :smile:) so you have to quickly change branch before finishing and committing your work
 2. you are working on a difficult task and you are trying different strategies to solve the problem thus before trying a new one you want to make sure you can get back on track with the previuos one without committing the changes or having to copy paste the changes in another folder of your system.
 
 In those scenarious `git stash` comes very handy!
