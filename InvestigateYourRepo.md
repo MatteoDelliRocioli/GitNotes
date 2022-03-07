@@ -2,7 +2,7 @@
 
 <b>NB: </b><br>
 - <b>All the commands here displayed must be run in the path where you have cloned your repo</b><br>
-- <b>Angle brackets mean that the inner text must be replaced to the text which suits best for your case</b><br>
+- <b>Angle brackets mean that the inner text must be replaced with the text which suits best for your case</b><br>
 - <b>The following commands have to be used after a `git fetch` and `git pull` to be accurate</b>
 ---
 
