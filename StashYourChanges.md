@@ -38,4 +38,10 @@ The stash number can be seen using the `git stash list` command.
 
 ---
 
+### How can I only stash changes from a specific file?
+
+`git stash push -m "<stash-commit-name>" <path-to-file-you-want-to-stash>`
+
+---
+
 I hope you could benefit from this brief guide
