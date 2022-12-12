@@ -39,8 +39,8 @@ git update-index --no-assume-unchanged <file-path>
 git log  --graph --abbrev-commit --decorate  --first-parent
 ```
 
-## Filter current branch commits by author
+> ## Filter current branch commits by author
 
-```
-git log  --graph --abbrev-commit --decorate  --first-parent --author="matteo"
-```
+> ```
+> git log  --graph --abbrev-commit --decorate  --first-parent --author="matteo"
+> ```
