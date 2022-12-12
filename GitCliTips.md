@@ -30,3 +30,17 @@ and to undo:
 ```
 git update-index --no-assume-unchanged <file-path>
 ```
+
+---
+
+# Git log only current branch commits
+
+```
+git log  --graph --abbrev-commit --decorate  --first-parent
+```
+
+## Filter current branch commits by author
+
+```
+git log  --graph --abbrev-commit --decorate  --first-parent --author="matteo"
+```
