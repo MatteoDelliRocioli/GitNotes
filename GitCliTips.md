@@ -44,3 +44,19 @@ git log  --graph --abbrev-commit --decorate  --first-parent
 > ```
 > git log  --graph --abbrev-commit --decorate  --first-parent --author="matteo"
 > ```
+
+---
+
+# Find string in your commits of a particular branch
+
+- First find the hashes of the commits in where you want to look for the string
+
+```
+git log  --graph --abbrev-commit --decorate  --first-parent <your-branch> --author="matteo"
+```
+
+- The second step is to use those commit hashes to limit the scope of the string search
+
+```
+git show <commit-hash-first-commit>..<commit-hash-last-commit> | grep -C10 "<string-pattern-to-search>"
+```
