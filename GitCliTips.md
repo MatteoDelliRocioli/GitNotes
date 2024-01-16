@@ -60,3 +60,34 @@ git log  --graph --abbrev-commit --decorate  --first-parent <your-branch> --auth
 ```
 git show <commit-hash-first-commit>..<commit-hash-last-commit> | grep -C10 "<string-pattern-to-search>"
 ```
+
+---
+
+# How to count the number of commits since you branched out from main
+
+```
+git rev-list --count main..your-branch
+```
+
+---
+
+# How to selectively add the signature to remotely pushed commits
+
+```
+git rebase -i origin/main # to select which commits to modify among all the commits since branching out from the main branch
+# replace the 'pick' word with 'edit' for the commits you need to modify
+```
+
+```
+git commit --amend --no-edit -S # to apply the signature without changing the commit message, the signature must have already been configured
+```
+
+```
+git rebase --continue # to continue to the next commit
+```
+
+```
+git push origin <your-branch-name> --force # to re-write the remote branch history with your signed commits. Please bear in mind that this step is especially delicate as ->
+# you want to make sure you are the only one working on that branch and/or the other team members are aligned with what you want to do: everything that was pushed before will not ->
+# exist anymore
+```
